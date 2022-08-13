@@ -84,7 +84,7 @@ local Window = Library.CreateLib("Zodiac's Hub Da Hood BattleGrounds", "BloodThe
     end)
 
     local Player = Window:NewTab("Player")
-    local PlayerSection = Tab:NewSection("Player")
+    local PlayerSection = Player:NewSection("Player")
 
     PlayerSection:NewSlider("Speed", "Speed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
